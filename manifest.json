@@ -1,0 +1,19 @@
+{
+  "name": "radio1.fast",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Odstranění blikající grafiky z webu radia 1.",
+	"icons": { "16": "r1.png",
+           "48": "r1.png",
+					"128": "r1.png"	},
+	"content_scripts": [
+			{
+				"matches": ["http://www.radio1.cz/*"],
+				"js": ["jquery-1.8.3.min.js", "r1.js"],
+				"css": ["r1.css"]
+			}
+		],
+  "permissions": [
+    "http://www.radio1.cz/"
+  ]
+}
